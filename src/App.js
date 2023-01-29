@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Form setInfo={setInfo} setState={setState}/>
-        <Info info={info} setInfo={setInfo} state={state}/>
+        <Info info={info} state={state}/>
       </header>
     </div>
   );
