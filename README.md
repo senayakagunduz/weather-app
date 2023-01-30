@@ -1,4 +1,6 @@
 [https://senayakgndz-weatherapp-react.netlify.app/]
+## ![weatherapp](https://user-images.githubusercontent.com/69090467/215469828-16dbc174-7b33-4871-82b6-6b86a5cc3288.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
