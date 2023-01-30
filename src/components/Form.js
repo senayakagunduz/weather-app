@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BiSearchAlt } from "react-icons/bi";
 import axios from "axios";
 
 export const Form = ({ setInfo,setState}) => {
@@ -22,7 +21,6 @@ export const Form = ({ setInfo,setState}) => {
         }}
       >
         <div className="input-group">
-          <BiSearchAlt />
           <input
             className="form-control"
             onChange={(e) => setCity(e.target.value)}
