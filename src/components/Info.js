@@ -1,5 +1,6 @@
 import React from "react";
-import { WiSunset } from "react-icons/wi";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faSunPlantWilt } from "@fortawesome/free-solid-svg-icons";
 
 const Info = ({ info, state }) => {
   return (
@@ -11,12 +12,13 @@ const Info = ({ info, state }) => {
             <p id="sicaklik">
               {info.main.temp}
             </p>
-            <WiSunset className="fa-c" />
+          
+            <FontAwesomeIcon icon={faSunPlantWilt} />
           </div>
           <p id="havadurumu">{info.weather[0].description}</p>
           <div className="his">
             <p id="hissedilen">{info.main.feels_like}</p>
-            <WiSunset className="fa-c" />
+           
           </div>
         </div> :null
       }
