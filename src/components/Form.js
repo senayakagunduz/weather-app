@@ -5,7 +5,7 @@ import axios from "axios";
 export const Form = ({ setInfo,setState}) => {
   const [city, setCity] = useState("");
 
-  const handleChange = async () => {
+  const getData = async () => {
     const KEY = "aef00181dee1ab9c2ca43739994a52f0";
     const baseUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}&units=metric&lang=tr`;
     await axios(baseUrl).then(async resp =>{ await setInfo(resp.data)}).catch(err => console.log("Hatanız : ", err));
@@ -18,7 +18,7 @@ export const Form = ({ setInfo,setState}) => {
         className="input-group"
         onSubmit={(e) => {
           e.preventDefault();
-          handleChange();
+          getData();
         }}
       >
         <div className="input-group">
@@ -31,7 +31,7 @@ export const Form = ({ setInfo,setState}) => {
           />
         </div>
         <div className="input-group mt-3 d-flex justify-content-center">
-          <button type="button" onClick={()=>handleChange()} className="btn btn-primary" style={{marginTop:"3px",marginBottom:"5px"}}>
+          <button type="button" onClick={()=>getData()} className="btn btn-primary" style={{marginTop:"3px",marginBottom:"5px"}}>
             Verileri getir
           </button>
         </div>

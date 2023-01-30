@@ -1,5 +1,4 @@
 import React from "react";
-//import { BiMapPin } from 'react-icons/bi';
 import { WiSunset } from "react-icons/wi";
 
 const Info = ({ info, state }) => {
